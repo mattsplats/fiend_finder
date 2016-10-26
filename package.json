@@ -1,0 +1,29 @@
+{
+  "name": "friend_finder",
+  "version": "0.0.1",
+  "description": "\"Friend finder\" pseudo-dating app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattsplats/fiend_finder.git"
+  },
+  "keywords": [
+    "friend",
+    "dating"
+  ],
+  "author": "Matt Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattsplats/fiend_finder/issues"
+  },
+  "homepage": "https://github.com/mattsplats/fiend_finder#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  }
+}
