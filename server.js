@@ -26,6 +26,6 @@ app.get('/api/friends', apiRoutes.get);
 app.post('/api/friends', apiRoutes.post);
 
 // Init server
-app.listen(PORT, function () {
-	console.log('App listening on port ' + PORT);
+app.listen(process.env.PORT || PORT, function () {
+	console.log(`App listening on port ${PORT}`);
 });
