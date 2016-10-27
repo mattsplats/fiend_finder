@@ -7,7 +7,7 @@ const express    = require('express'),
       apiRoutes  = require('./app/routing/api-routes.js'),
 
       app        = express(),
-      PORT       = 3000;
+      PORT       = 80;
 
 // Express init
 app.use(bodyParser.json());
