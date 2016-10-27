@@ -7,7 +7,9 @@ exports.get = function (req, res) {
 	res.json(data);
 };
 
-exports.post = function (req, res) {	
+exports.post = function (req, res) {
+	'use strict';
+
 	let minDiff  = 50,
 	    matchArr = [];
 
