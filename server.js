@@ -1,3 +1,5 @@
+'use strict';
+
 // Express vars
 const express    = require('express'),
       bodyParser = require('body-parser'),
