@@ -7,29 +7,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<style>
-		select {
-			height: 28px;
-			border-radius: 4px; 
-			border: 1px solid #AAA;
-		}
-
-		select:invalid {
-			color: #AAA;
-		}
-
-		option {
-			color: black;
-		}
-	</style>
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 	<div class="container">
 
-		<div class="row">
+		<div class="row text-white">
 			<div class="col-md-12">
-				<h2>Survey Questions</h2>
+				<h1>Find-A-Friend Survey</h1>
 				<hr>
 				<h3>About You</h3>
 				<form>
@@ -48,13 +35,12 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row text-white">
 			<div class="col-md-4">
 				<button type="submit" class="btn btn-primary btn-lg" id="submit" style="width: 100%;"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+				<hr>
 			</div>
 		</div>
-
-		<hr>
 
 		<div class="row">
 			<div class="col-md-12">
@@ -71,7 +57,7 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Your New Friend</h4>
+	        <h3 class="modal-title" id="myModalLabel">Your New Friend!</h3>
 	      </div>
 	      <div class="modal-body">
 	      	<!-- New friend goes here -->
@@ -83,57 +69,6 @@
 	  </div>
 	</div>
 
-	<script type="text/javascript">
-		'use strict';
-
-		const qArr = [
-			`Seinfeld is the greatest TV show ever.`,
-			`So is Friends.`,
-			`The last two questions are not contradictory.  At all.`,
-			`I dream about a zombie apocalypse.`,
-			`Slow zombies and fast zombies are equally entertaining.`,
-			`I'm sad that there are no more questions about zombies.`,
-			`Jeff's obsession with Pearl Jam is not at all strange.`,
-			`I have no idea who Jeff is, but if he's a Pearl Jam fan, he can't be all bad.`,
-			`How many beers must one drink before the real fun starts?`,
-			`My favorite number between one and five is ...`
-		];
-
-		for (let i = 0; i < qArr.length; i++) {
-			$('#questions').append(`<h3>Question ${i+1}</h3>`)
-				.append(`<p>${qArr[i]}</p>`)
-				.append(`<select required class="chosen-select answer" id="${i}">
-						<option value="" disabled selected hidden>Choose an option</option>
-				    <option value="1">1 (Strongly Disagree)</option>
-				    <option value="2">2</option>
-			  	  <option value="3">3</option>
-			    	<option value="4">4</option>
-				    <option value="5">5 (Strongly Agree)</option>
-			 		</select>`);
-		}
-
-		$('#submit').on('click', function () {
-			let scoreArr = [];
-			$('.answer').each(function () { scoreArr.push($(this).val()) });
-
-			const newFriend = {
-				name: $('#name').val().trim(),
-				photo: $('#photo').val().trim(),
-				scores: scoreArr
-			};
-
-			if (newFriend.name && newFriend.photo && !scoreArr.some((val) => !val)) {
-				$.post('/api/friends', newFriend, function (data) {
-					$('.modal-body').html(`<h3>${data.name}</h3>`)
-						.append(`<img src="${data.photo}" style="max-width: 500px; max-height: 500px;">`);
-					$('#myModal').modal();
-				});
-
-			} else {
-				alert('Please fill out all fields.');
-			}
-		});
-		
-	</script>
+	<script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>
