@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = [
-	{"name":"Ahmed","photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg","scores":["5","1","4","4","5","1","2","5","4","1"]},
-	{"name":"Jacob Deming","photo":"https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg","scores":["4","2","5","1","3","2","2","1","3","2"]},
-	{"name":"Jeremiah Scanlon","photo":"https://avatars2.githubusercontent.com/u/8504998?v=3&s=460","scores":["5","2","2","2","4","1","3","2","5","5"]},
-	{"name":"Louis T. Delia","photo":"https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg","scores":["3","3","4","2","2","1","3","2","2","3"]},
-	{"name":"Lou Ritter","photo":"https://m.facebook.com/photo.php?fbid=10208500699025296&id=1542229019&set=a.1549418665704.77596.1542229019&source=11","scores":["4","3","4","1","5","2","5","3","1","4"]},
-	{"name":"Jordan Biason","photo":"https://site.utah.gov/dps-criminal/wp-content/uploads/sites/15/2015/03/no_photo_male.jpg","scores":["4","4","2","3","2","2","3","2","4","5"]},
+	{"name":"Sylvester the Cat","photo":"http://vignette2.wikia.nocookie.net/looneytunes/images/8/86/Sylvester-the-Cat-warner-brothers-animation-30976215-315-391.jpg/revision/latest?cb=20130216153940","scores":["5","1","4","4","5","1","2","5","4","1"]},
+	{"name":"Daffy Duck","photo":"http://cartoonbros.com/wp-content/uploads/2016/08/daffy-duck-8.png","scores":["4","2","5","1","3","2","2","1","3","2"]},
+	{"name":"Elmer Fudd","photo":"https://s-media-cache-ak0.pinimg.com/originals/15/59/4f/15594f063c78b4450fcd4ad1ce2bfbcb.jpg","scores":["5","2","2","2","4","1","3","2","5","5"]},
+	{"name":"Tweety Bird","photo":"http://vignette2.wikia.nocookie.net/looneytunes/images/7/79/Tweety.png/revision/latest?cb=20130218203946","scores":["3","3","4","2","2","1","3","2","2","3"]},
+	{"name":"Foghorn Leghorn","photo":"http://vignette2.wikia.nocookie.net/looneytunes/images/7/79/Foghorn_Leghorn.jpg/revision/latest?cb=20130223190707","scores":["4","3","4","1","5","2","5","3","1","4"]},
+	{"name":"Bugs Bunny","photo":"http://cartoonbros.com/wp-content/uploads/2016/04/Bugs-Bunny-12.png","scores":["4","4","2","3","2","2","3","2","4","5"]},
 ];
